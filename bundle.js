@@ -878,23 +878,7 @@ if (process.env.NODE_ENV === 'production') {
 "use strict";
 
 
-var _react = __webpack_require__(5);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(12);
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-window.onload = function () {
-    _reactDom2.default.render(_react2.default.createElement(
-        'div',
-        null,
-        'aaaa'
-    ), document.getElementById('root'));
-};
+__webpack_require__(25);
 
 /***/ }),
 /* 14 */
@@ -19492,6 +19476,488 @@ _calculateChangedBits:b,_defaultValue:a,_currentValue:a,_changedBits:0,Provider:
 (k=a.type.defaultProps);for(c in b)J.call(b,c)&&!K.hasOwnProperty(c)&&(d[c]=void 0===b[c]&&void 0!==k?k[c]:b[c])}c=arguments.length-2;if(1===c)d.children=e;else if(1<c){k=Array(c);for(var l=0;l<c;l++)k[l]=arguments[l+2];d.children=k}return{$$typeof:t,type:a.type,key:g,ref:h,props:d,_owner:f}},createFactory:function(a){var b=L.bind(null,a);b.type=a;return b},isValidElement:M,version:"16.3.2",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{ReactCurrentOwner:I,assign:m}},X=Object.freeze({default:W}),
 Y=X&&W||X;module.exports=Y["default"]?Y["default"]:Y;
 
+
+/***/ }),
+/* 25 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _react = __webpack_require__(5);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(12);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var App = function (_React$Component) {
+    _inherits(App, _React$Component);
+
+    function App(props) {
+        _classCallCheck(this, App);
+
+        var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
+
+        _this.componentDidMount = function () {
+            impress().init();
+        };
+
+        _this.render = function () {
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement('img', { id: 'applepie-image', className: 'bg', src: './public/images/6296334551_b3d5c27823_b.png' }),
+                _react2.default.createElement('img', { id: 'icecream-image', className: 'bg', src: './public/images/35535918670_f1d12627ff_o.png' }),
+                _react2.default.createElement('img', { id: 'crisps-image', className: 'bg', src: './public/images/6636957665_5e7c4a79de_o.png' }),
+                _react2.default.createElement(
+                    'div',
+                    { id: 'impress', 'data-transition-duration': '1000' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'step', 'data-scale': '2', 'data-x': '-500', 'data-y': '-500' },
+                        _react2.default.createElement(
+                            'h1',
+                            null,
+                            '2D navigation'
+                        ),
+                        _react2.default.createElement(
+                            'ul',
+                            null,
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Impress.js allows you to layout your presentation in a 3D space'
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Now ',
+                                _react2.default.createElement(
+                                    'a',
+                                    { href: 'https://github.com/impress/impress.js/tree/master/src/plugins/goto' },
+                                    'the goto plugin'
+                                ),
+                                ' also allows you to specify non-linear navigation!'
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'This demo can be navigated by',
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        'continuously pressing Right Arrow'
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        'continuously pressing Down Arrow'
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        '(or freely, pressing Up, Down, Right, Left as you choose)'
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'It\'s up to you to decide which is the better structure'
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { id: 'contents', className: 'step', 'data-rel-x': '1500', 'data-rel-y': '1500', 'data-scale': '1' },
+                        _react2.default.createElement(
+                            'h1',
+                            null,
+                            'Choosing a treat'
+                        ),
+                        _react2.default.createElement(
+                            'ul',
+                            null,
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'You can choose your preferred treat from:',
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        'Ice cream'
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        'Crisps'
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        'Apple pie'
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'We will make a structured pro\'s & con\'s analysis to arrive at a conclusion'
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { id: 'icecream', className: 'step', 'data-x': '2000', 'data-y': '2000',
+                            'data-goto-key-list': 'ArrowUp ArrowDown ArrowLeft ArrowRight',
+                            'data-goto-next-list': 'contents icecream-pro contents crisps' },
+                        _react2.default.createElement(
+                            'h1',
+                            null,
+                            'Ice cream'
+                        ),
+                        _react2.default.createElement(
+                            'ul',
+                            null,
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Cold'
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Creamy'
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Vanilla or flavored'
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Caramel sauce, jams & other toppings'
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { id: 'icecream-pro', className: 'step', 'data-rel-x': '0', 'data-rel-y': '1000',
+                            'data-goto-key-list': 'ArrowUp ArrowDown ArrowLeft ArrowRight',
+                            'data-goto-next-list': 'icecream icecream-con applepie crisps-pro' },
+                        _react2.default.createElement(
+                            'h1',
+                            null,
+                            'Ice cream: Pro\'s'
+                        ),
+                        _react2.default.createElement(
+                            'ul',
+                            null,
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Great for dessert or snack'
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Great in the Summer'
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { id: 'icecream-con', className: 'step', 'data-rel-x': '0', 'data-rel-y': '1000',
+                            'data-goto-key-list': 'ArrowUp ArrowDown ArrowLeft ArrowRight',
+                            'data-goto-next-list': 'icecream-pro crisps applepie-pro crisps-con' },
+                        _react2.default.createElement(
+                            'h1',
+                            null,
+                            'Ice cream: Con\'s'
+                        ),
+                        _react2.default.createElement(
+                            'ul',
+                            null,
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Not so great in the Winter'
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'If you\'re allergic to lactose/milk'
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Diet alternatives are not real ice cream'
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { id: 'crisps', className: 'step', 'data-x': '3500', 'data-y': '2000',
+                            'data-goto-key-list': 'ArrowUp ArrowDown ArrowLeft ArrowRight',
+                            'data-goto-next-list': 'icecream-con crisps-pro icecream applepie' },
+                        _react2.default.createElement(
+                            'h1',
+                            null,
+                            'Crisps'
+                        ),
+                        _react2.default.createElement(
+                            'ul',
+                            null,
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Potatoes fried in oil and salted'
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Various flavors'
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Dips'
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Can be used as ingredient in subs (Cliff Huxtable style)'
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { id: 'crisps-pro', className: 'step', 'data-rel-x': '0', 'data-rel-y': '1000',
+                            'data-goto-key-list': 'ArrowUp ArrowDown ArrowLeft ArrowRight',
+                            'data-goto-next-list': 'crisps crisps-con icecream-pro applepie-pro' },
+                        _react2.default.createElement(
+                            'h1',
+                            null,
+                            'Crisps: Pro\'s'
+                        ),
+                        _react2.default.createElement(
+                            'ul',
+                            null,
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Simple yet tasty concept'
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Great for snack'
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Salty / spicy (not sweet)'
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Finger food'
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Diet alternatives are often ok'
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { id: 'crisps-con', className: 'step', 'data-rel-x': '0', 'data-rel-y': '1000',
+                            'data-goto-key-list': 'ArrowUp ArrowDown ArrowLeft ArrowRight',
+                            'data-goto-next-list': 'crisps-pro applepie icecream-con applepie-con' },
+                        _react2.default.createElement(
+                            'h1',
+                            null,
+                            'Crisps: Con\'s'
+                        ),
+                        _react2.default.createElement(
+                            'ul',
+                            null,
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Commonly not used as dessert'
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Not sweet'
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { id: 'applepie', className: 'step', 'data-x': '5000', 'data-y': '2000',
+                            'data-goto-key-list': 'ArrowUp ArrowDown ArrowLeft ArrowRight',
+                            'data-goto-next-list': 'crisps-con applepie-pro crisps icecream-pro' },
+                        _react2.default.createElement(
+                            'h1',
+                            null,
+                            'Apple pie'
+                        ),
+                        _react2.default.createElement(
+                            'ul',
+                            null,
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Apple\'s in a pie'
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Many recipes exist. (Grandma\'s is the best.)'
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Vanilla sauce or cream on top'
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { id: 'applepie-pro', className: 'step', 'data-rel-x': '0', 'data-rel-y': '1000',
+                            'data-goto-key-list': 'ArrowUp ArrowDown ArrowLeft ArrowRight',
+                            'data-goto-next-list': 'applepie applepie-con crisps-pro icecream-con' },
+                        _react2.default.createElement(
+                            'h1',
+                            null,
+                            'Apple pie: Pro\'s'
+                        ),
+                        _react2.default.createElement(
+                            'ul',
+                            null,
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Great for dessert'
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Or just with a cup of tea or glass of milk'
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Best when warm'
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { id: 'applepie-con', className: 'step', 'data-rel-x': '0', 'data-rel-y': '1000',
+                            'data-goto-key-list': 'ArrowUp ArrowDown ArrowLeft ArrowRight',
+                            'data-goto-next-list': 'applepie-pro conclusion crisps-con conclusion' },
+                        _react2.default.createElement(
+                            'h1',
+                            null,
+                            'Apple pie: Con\'s'
+                        ),
+                        _react2.default.createElement(
+                            'ul',
+                            null,
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'I\'m allergic to apple (but a small slice is worth it)'
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Not finger food'
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { id: 'conclusion', className: 'step', 'data-rel-x': '1000', 'data-rel-y': '1000' },
+                        _react2.default.createElement(
+                            'h1',
+                            null,
+                            'Conclusion'
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            'Can I choose all three ;-)'
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            { style: { fontSize: 'small', position: 'absolute', bottom: '30px', left: '300px' }, id: 'image-credits'
+                            },
+                            'Image credits: ',
+                            _react2.default.createElement(
+                                'a',
+                                { href: 'https://www.flickr.com/photos/reimagingerica/35535918670' },
+                                'reimagingerica@Flickr'
+                            ),
+                            ',',
+                            _react2.default.createElement(
+                                'a',
+                                { href: 'https://www.flickr.com/photos/mixedmolly/6636957665' },
+                                'mixedmolly@Flickr'
+                            ),
+                            ',',
+                            _react2.default.createElement(
+                                'a',
+                                { href: 'https://www.flickr.com/photos/stevepj2009/6296334551' },
+                                'stevepj2009@Flickr'
+                            ),
+                            ' '
+                        )
+                    ),
+                    _react2.default.createElement('div', { id: 'overview', className: 'step', 'data-x': '3000', 'data-y': '2000', 'data-scale': '9', style: { pointerEvents: 'none' } })
+                ),
+                _react2.default.createElement('div', { id: 'impress-toolbar' }),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'impress-progressbar' },
+                    _react2.default.createElement('div', null)
+                ),
+                _react2.default.createElement('div', { className: 'impress-progress' }),
+                _react2.default.createElement('div', { id: 'impress-help' })
+            );
+        };
+
+        _this.state = {};
+        return _this;
+    }
+
+    return App;
+}(_react2.default.Component);
+
+window.onload = function () {
+    _reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById('root'));
+};
 
 /***/ })
 /******/ ]);
